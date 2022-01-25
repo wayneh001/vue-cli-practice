@@ -70,6 +70,16 @@ const routes = [
         component: () => import('../views/RouterNavigation.vue')
       }
     ]
+  },
+  // 404 頁面
+  {
+    path: '/:pathMatch(.*)*',
+    component: () => import('../views/NotFound.vue')
+  },
+  // 重新導向
+  {
+    path: '/newPage/:pathMatch(.*)*',
+    redirect: { name: 'Home' }
   }
 ]
 
