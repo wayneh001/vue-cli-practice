@@ -32,20 +32,6 @@ const routes = [
         component: () => import('../views/ComponentB.vue')
       },
       {
-        path: 'dynamicRouter/:id',
-        component: () => import('../views/DynamicRouter.vue')
-      },
-      {
-        path: 'dynamicRouterByProps/:id',
-        component: () => import('../views/DynamicRouterByProps.vue'),
-        props: (route) => {
-          console.log('route:', route)
-          return {
-            id: route.params.id
-          }
-        }
-      },
-      {
         path: 'namedView',
         component: () => import('../views/NamedView.vue'),
         children: [
@@ -64,6 +50,24 @@ const routes = [
             }
           }
         ]
+      },
+      {
+        path: 'dynamicRouter/:id',
+        component: () => import('../views/DynamicRouter.vue')
+      },
+      {
+        path: 'dynamicRouterByProps/:id',
+        component: () => import('../views/DynamicRouterByProps.vue'),
+        props: (route) => {
+          console.log('route:', route)
+          return {
+            id: route.params.id
+          }
+        }
+      },
+      {
+        path: 'routerNavigation',
+        component: () => import('../views/RouterNavigation.vue')
       }
     ]
   }

@@ -16,10 +16,28 @@
             元件 B
           </router-link>
           <router-link
-            to="/newPage/NamedView"
+            to="/newPage/namedView"
             class="list-group-item"
           >
-            NamedView
+            具名視圖
+          </router-link>
+          <router-link
+            to="/newPage/dynamicRouter/:id"
+            class="list-group-item"
+          >
+            動態路由
+          </router-link>
+          <router-link
+            to="/newPage/dynamicRouterByProps/:id"
+            class="list-group-item"
+          >
+            動態路由與 props
+          </router-link>
+          <router-link
+            to="/newPage/routerNavigation"
+            class="list-group-item"
+          >
+            路由導覽
           </router-link>
         </div>
       </div>
