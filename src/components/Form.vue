@@ -30,7 +30,7 @@
       <ErrorMessage name="姓名" class="invalid-feedback"></ErrorMessage>
     </div>
 
-    <button class="btn btn-success" type="submit">Submit</button>
+    <button class="btn btn-primary" type="submit">Submit</button>
   </Form>
 </template>
 

@@ -33,7 +33,7 @@
 
   <div class="container" style="height: 300vh">
     <router-view />
-    <!-- <button type="button" class="btn btn-success mt-5">{{ name }}</button> -->
+    <!-- <button type="button" class="btn btn-primary mt-5">{{ name }}</button> -->
   </div>
   <router-link to="/newPage/routerNavigation"><h3>ROUTER NAVIGATION</h3></router-link>
 
@@ -50,7 +50,7 @@ export default {
 }
 </script>
 <style lang="scss">
-@import "bootstrap";
+@import "./assets/all";
 
 body {
   padding-top: 100px
@@ -63,16 +63,16 @@ body {
   color: #2c3e50;
 }
 
-// #nav {
-//   padding: 30px;
+#nav {
+  padding: 30px;
 
-//   a {
-//     font-weight: bold;
-//     color: #2c3e50;
+  a {
+    font-weight: bold;
+    color: #2c3e50;
 
-//     &.router-link-exact-active {
-//       color: #42b983;
-//     }
-//   }
-// }
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
 </style>

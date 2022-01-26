@@ -86,7 +86,7 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
-  // linkActiveClass: 'active',
+  linkActiveClass: 'active',
   scrollBehavior (to, from, savedPosition) {
     console.log(to, from, savedPosition)
     if (to.fullPath.match('newPage')) {

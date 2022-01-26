@@ -1,14 +1,14 @@
 <template>
   <div class="btn-group" role="group" aria-label="Basic example">
-    <button type="button" class="btn btn-success" @click="getRoute">
+    <button type="button" class="btn btn-primary" @click="getRoute">
       GET ROUTE
     </button>
-    <button type="button" class="btn btn-success" @click="push">PUSH</button>
-    <button type="button" class="btn btn-success" @click="replace">
+    <button type="button" class="btn btn-primary" @click="push">PUSH</button>
+    <button type="button" class="btn btn-primary" @click="replace">
       REPLACE
     </button>
-    <button type="button" class="btn btn-success" @click="go">GO</button>
-    <button type="button" class="btn btn-success" @click="addRoute">
+    <button type="button" class="btn btn-primary" @click="go">GO</button>
+    <button type="button" class="btn btn-primary" @click="addRoute">
       ADD ROUTE
     </button>
   </div>
